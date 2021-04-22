@@ -1,0 +1,53 @@
+.input-group-lg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px auto 0px auto;
+    grid-column-gap: 10px;
+}
+
+.form-control {
+    background-color: #FFFFFF; 
+    border-radius: 64px;
+    border: 1px solid #979797;
+    padding: 20px;
+    height: 50px;
+    vertical-align: middle;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.btn {
+    padding: .55rem 1.5rem;
+}
+
+.btn-primary {
+    background-color: #FE5592;
+    border-radius: 64px;
+    border: 1px solid #FE5592;
+    line-height: 1.5;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.btn-primary:hover, .btn-primary:focus,
+.btn-primary:active {
+    color:#FE5592;
+    background-color: #FFFFFF;
+    border: 1px solid #FE5592;
+    font-size: 20px;
+}
+
+.email-alert {
+    font-size: 14px;
+    color: #FE5592;
+    text-align: center;
+}
+
+.submit-alert {
+    text-align: center;
+    font-size: 14px;
+    color: #FE5592;
+}

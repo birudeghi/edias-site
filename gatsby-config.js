@@ -1,6 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: "edias-space",
+    title: "edias",
+    menuLinks:[
+      {
+        name: 'Contact',
+        link: "mailto:owen@edias.space"
+      }
+    ]
   },
   plugins: [
     {
@@ -26,6 +32,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-sharp",
+    "gatsby-plugin-mailgo",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
