@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@0,400;1,300&display=swap');
+
+.react-monaco-editor-container {
+    margin-top: 100px;
+    width: 100%;
+
+    span.mtk1 {
+      font-family: 'Source Code Pro', monospace;
+    }
+
+    div.active-line-number.line-numbers {
+      font-family: 'Source Code Pro', monospace;
+    }
+}
