@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import Layout from "../components/navbar/layout";
 import { Helmet } from 'react-helmet';
-import MonacoEditor from 'react-monaco-editor';
-import InitiateAvrgirl from '../components/avrgirl';
+import { InitiateAvrgirl } from '../components/avrgirl';
 import './_dev.scss';
 
 const DevPage = () => {
     const [ hex, setHex ] = useState(null);
 
-    handleSubmit = event => {
+    const handleSubmit = event => {
         InitiateAvrgirl(event.state.value);
     }
     return (
@@ -17,13 +16,12 @@ const DevPage = () => {
                 <title>Edias | Home</title>
                 <meta name="description" content="Risk on. Break things." />
             </Helmet>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="form-container">
                 <label for="File1">Upload hex file here
-                    <input type="file" className="file-upload" id="File1" onChange={setHex}/>
+                    <input type="file" className="file-upload" value={hex} id="File1" onChange={setHex}/>
                 </label>
                 <input type="submit" value="submit" className="submit-button" />
             </form>
-            
         </Layout>
     )
 }
