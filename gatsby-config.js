@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: "https://edias.space",
     title: "edias",
     menuLinks:[
       {
