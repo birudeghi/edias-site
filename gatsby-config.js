@@ -8,6 +8,10 @@ module.exports = {
       {
         name: 'Contact',
         link: "mailto:owen@edias.space"
+      },
+      {
+        name: 'Dev',
+        link: "/dev",
       }
     ]
   },

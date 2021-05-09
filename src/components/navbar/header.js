@@ -36,7 +36,7 @@ const Header = ({ siteTitle, menuLinks }) => {
                 key={link.name}
                 className="header-nav--list-link"
               >
-                <a className="header-nav--link" href="mailto:owen@edias.space">
+                <a className="header-nav--link" href={link.link}>
                   {link.name}
                 </a>
               </li>
