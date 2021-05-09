@@ -1,12 +1,14 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Layout from "../components/navbar/layout";
 import { Helmet } from 'react-helmet';
+import Avrgirl from 'avrgirl-arduino';
 
 import './_dev.scss';
 
+
 const DevPage = () => {
     const fileInput = useRef(null);
-    const Avrgirl = React.lazy(() => import("avrgirl-arduino"));
+
     const handleSubmit = e => {
         e.preventDefault();
         const reader = new FileReader();
