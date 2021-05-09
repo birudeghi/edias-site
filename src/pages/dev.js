@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import Layout from "../components/navbar/layout";
 import { Helmet } from 'react-helmet';
 import Avrgirl from 'avrgirl-arduino';

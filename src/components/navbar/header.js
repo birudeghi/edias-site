@@ -36,9 +36,9 @@ const Header = ({ siteTitle, menuLinks }) => {
                 key={link.name}
                 className="header-nav--list-link"
               >
-                <a className="header-nav--link" href={link.link}>
+                <Link className="header-nav--link" href={link.link}>
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
