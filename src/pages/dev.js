@@ -1,15 +1,36 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import Layout from "../components/navbar/layout";
 import { Helmet } from 'react-helmet';
-import { InitiateAvrgirl } from '../components/avrgirl';
+import Avrgirl from "avrgirl-arduino";
+
 import './_dev.scss';
 
 const DevPage = () => {
-    const [ hex, setHex ] = useState(null);
+    const fileInput = useRef(null);
 
-    const handleSubmit = event => {
-        InitiateAvrgirl(event.state.value);
-    }
+    const handleSubmit = e => {
+        e.preventDefault();
+        const reader = new FileReader();
+
+        reader.readAsArrayBuffer(fileInput.current.files[0]);
+        
+        reader.onload = event => {
+            const fileContents = event.target.result;
+            
+            const avrgirl = new Avrgirl({
+                board: 'mega'
+              });
+              
+            avrgirl.flash(fileContents, error => {
+                if (error) {
+                  console.error(error);
+                } else {
+                  console.info('Flash successful.');
+                }
+            });
+        };
+    };
+
     return (
         <Layout>
             <Helmet>
@@ -18,9 +39,9 @@ const DevPage = () => {
             </Helmet>
             <form onSubmit={handleSubmit} className="form-container">
                 <label for="File1">Upload hex file here
-                    <input type="file" className="file-upload" value={hex} id="File1" onChange={setHex}/>
+                    <input type="file" className="file-upload" ref={fileInput} id="File1" />
                 </label>
-                <input type="submit" value="submit" className="submit-button" />
+                <input type="submit" value="upload" className="submit-button" />
             </form>
         </Layout>
     )
