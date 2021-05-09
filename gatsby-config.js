@@ -11,7 +11,7 @@ module.exports = {
       },
       {
         name: 'Dev',
-        link: "/dev",
+        link: "/dev/",
       }
     ]
   },
