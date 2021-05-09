@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: "https://edias.space",
     title: "edias",
     siteUrl: 'https://edias.space',
     description: 'Quickly prototype PyCubed software for your CubeSat components.',
