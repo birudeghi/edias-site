@@ -1,0 +1,20 @@
+.step {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+    .step-col {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        max-width: 300px;
+        align-items: center;
+        margin: 0px 30px 0px 30px;
+
+        .step-text {
+            align-items: center;
+            text-align: center;
+        }
+    }
+}

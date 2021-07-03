@@ -1624,6 +1624,77 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
+"@serialport/binding-abstract@^9.0.7":
+  version "9.0.7"
+  resolved "https://registry.yarnpkg.com/@serialport/binding-abstract/-/binding-abstract-9.0.7.tgz#d2c7ecea0f100bdf20187bfc0d34ba90f5504e1e"
+  integrity sha512-g1ncCMIG9rMsxo/28ObYmXZcHThlvtZygsCANmyMUuFS7SwXY4+PhcEnt2+ZcMkEDNRiOklT+ngtIVx5GGpt/A==
+  dependencies:
+    debug "^4.3.1"
+
+"@serialport/binding-mock@9.0.7":
+  version "9.0.7"
+  resolved "https://registry.yarnpkg.com/@serialport/binding-mock/-/binding-mock-9.0.7.tgz#2fda427adc113320461f33f7426dfca73e8ad1de"
+  integrity sha512-aR8H+htZwwZZkVb1MdbnNvGWw8eXVRqQ2qPhkbKyx0N/LY5aVIgCgT98Kt1YylLsG7SzNG+Jbhd4wzwEuPVT5Q==
+  dependencies:
+    "@serialport/binding-abstract" "^9.0.7"
+    debug "^4.3.1"
+
+"@serialport/bindings@^9.2.0":
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/@serialport/bindings/-/bindings-9.2.0.tgz#de6df688d0ff99bdbb86ea6db412562cb2d9ebe7"
+  integrity sha512-s9EKHDZjLHipHhypxy6pz2XsoI1fPiOGU+X13AIGdQfoe7I6piEyhJ2znNgXMugMe43OxNk0/CmuVMzzcw1lmQ==
+  dependencies:
+    "@serialport/binding-abstract" "^9.0.7"
+    "@serialport/parser-readline" "^9.0.7"
+    bindings "^1.5.0"
+    debug "^4.3.1"
+    nan "^2.14.2"
+    prebuild-install "^6.0.1"
+
+"@serialport/parser-byte-length@9.0.7":
+  version "9.0.7"
+  resolved "https://registry.yarnpkg.com/@serialport/parser-byte-length/-/parser-byte-length-9.0.7.tgz#9e362bba70eeffcd2eb0804afeca4bb1dee59d5f"
+  integrity sha512-evf7oOOSBMBn2AZZbgBFMRIyEzlsyQkhqaPm7IBCPTxMDXRf4tKkFYJHYZB0/6d1W4eI0meH079UqmSsh/uoDA==
+
+"@serialport/parser-cctalk@9.0.7":
+  version "9.0.7"
+  resolved "https://registry.yarnpkg.com/@serialport/parser-cctalk/-/parser-cctalk-9.0.7.tgz#fa0e1539f067aced22a5ef7d64fdac14f1a6a4d3"
+  integrity sha512-ert5jhMkeiTfr44TkbdySC09J8UwAsf/RxBucVN5Mz5enG509RggnkfFi4mfj3UCG2vZ7qsmM6gtZ62DshY02Q==
+
+"@serialport/parser-delimiter@9.0.7", "@serialport/parser-delimiter@^9.0.7":
+  version "9.0.7"
+  resolved "https://registry.yarnpkg.com/@serialport/parser-delimiter/-/parser-delimiter-9.0.7.tgz#7bef2447d4282dd00dc659719b310edeb30ff294"
+  integrity sha512-Vb2NPeXPZ/28M4m5x4OAHFd8jRAeddNCgvL+Q+H/hqFPY1w47JcMLchC7pigRW8Cnt1fklmzfwdNQ8Fb+kMkxQ==
+
+"@serialport/parser-inter-byte-timeout@9.0.7":
+  version "9.0.7"
+  resolved "https://registry.yarnpkg.com/@serialport/parser-inter-byte-timeout/-/parser-inter-byte-timeout-9.0.7.tgz#55b315b49d8ad37f981ba69bb9443f25c96aec17"
+  integrity sha512-lUZ3cwgUluBvJ1jf+0LQsqoiPYAokDO6+fRCw9HCfnrF/OS60Gm4rxuyo2uQIueqZkJ7NIFP+ibKsULrA47AEA==
+
+"@serialport/parser-readline@9.0.7", "@serialport/parser-readline@^9.0.7":
+  version "9.0.7"
+  resolved "https://registry.yarnpkg.com/@serialport/parser-readline/-/parser-readline-9.0.7.tgz#8b096028170fb2644bcf0f997d534a344cfd00e6"
+  integrity sha512-ydoLbgVQQPxWrwbe3Fhh4XnZexbkEQAC6M/qgRTzjnKvTjrD61CJNxLc3vyDaAPI9bJIhTiI7eTX3JB5jJv8Hg==
+  dependencies:
+    "@serialport/parser-delimiter" "^9.0.7"
+
+"@serialport/parser-ready@9.0.7":
+  version "9.0.7"
+  resolved "https://registry.yarnpkg.com/@serialport/parser-ready/-/parser-ready-9.0.7.tgz#d9eb9801c6003fdb1450c557f3e256a188a9f3be"
+  integrity sha512-3qYhI4cNUPAYqVYvdwV57Y+PVRl4dJf1fPBtMoWtwDgwopsAXTR93WCs49WuUq9JCyNW+8Hrfqv8x8eNAD5Dqg==
+
+"@serialport/parser-regex@9.0.7":
+  version "9.0.7"
+  resolved "https://registry.yarnpkg.com/@serialport/parser-regex/-/parser-regex-9.0.7.tgz#d8a02e3a169faa2f6604e8293832cc676b865f48"
+  integrity sha512-5XF+FXbhqQ/5bVKM4NaGs1m+E9KjfmeCx/obwsKaUZognQF67jwoTfjJJWNP/21jKfxdl8XoCYjZjASl3XKRAw==
+
+"@serialport/stream@9.0.7":
+  version "9.0.7"
+  resolved "https://registry.yarnpkg.com/@serialport/stream/-/stream-9.0.7.tgz#0bf023eb0233a714fcc5a86de09e381e466d9882"
+  integrity sha512-c/h7HPAeFiryD9iTGlaSvPqHFHSZ0NMQHxC4rcmKS2Vu3qJuEtkBdTLABwsMp7iWEiSnI4KC3s7bHapaXP06FQ==
+  dependencies:
+    debug "^4.3.1"
+
 "@sideway/address@^4.1.0":
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/@sideway/address/-/address-4.1.1.tgz#9e321e74310963fdf8eebfbee09c7bd69972de4d"
@@ -2578,7 +2649,12 @@ async@1.5.2:
   resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
   integrity sha1-7GphrlZIDAw8skHJVhjiCJL5Zyo=
 
-async@^2.6.2:
+async@^0.9.0:
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/async/-/async-0.9.2.tgz#aea74d5e61c1f899613bf64bda66d4c78f2fd17d"
+  integrity sha1-rqdNXmHB+JlhO/ZL2mbUx48v0X0=
+
+async@^2.6.2, async@^2.6.3:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/async/-/async-2.6.3.tgz#d72625e2344a3656e3a3ad4fa749fa83299d82ff"
   integrity sha512-zflvls11DCy+dQWzTW2dzuilv8Z5X/pjfmZOWba6TNIVDm+2UDaJmXSOXlasHKfNBs8oo3M0aT50fDEWfKZjXg==
@@ -2617,6 +2693,24 @@ autoprefixer@^10.2.4:
     normalize-range "^0.1.2"
     postcss-value-parser "^4.1.0"
 
+avrgirl-arduino@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/avrgirl-arduino/-/avrgirl-arduino-5.0.1.tgz#52e95a8fc7aad676d5780daf4136978a42e1adfa"
+  integrity sha512-wF9wJhhRG6vDinBxTuFRR3iIaVDMjJfce2wW7JwmbXJquzoGu3HIK5SnvDqNplsi3hcOS+p+15m1z9kt3IwgdQ==
+  dependencies:
+    async "^2.6.3"
+    awty "^0.1.0"
+    browser-serialport "git+https://github.com/noopkat/browser-serialport.git#c8628c41c11890d3058875994c15f83f2df8185b"
+    chip.avr.avr109 "^1.1.1"
+    colors "^1.4.0"
+    graceful-fs "^4.2.4"
+    intel-hex "^0.1.2"
+    minimist "^1.2.5"
+    process "^0.11.10"
+    serialport "^9.0.6"
+    stk500 "^2.0.3"
+    stk500-v2 "^1.0.4"
+
 aws-sign2@~0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
@@ -2626,6 +2720,13 @@ aws4@^1.8.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
+
+awty@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/awty/-/awty-0.1.0.tgz#8b705c1ee3139f8d6e9f29409d90b74f93e840ba"
+  integrity sha1-i3BcHuMTn41unylAnZC3T5PoQLo=
+  dependencies:
+    isval "0.0.2"
 
 axe-core@^4.0.2:
   version "4.2.0"
@@ -2952,6 +3053,11 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
+bootstrap-icons@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-icons/-/bootstrap-icons-1.5.0.tgz#2cb19da148aa9105cb3174de2963564982d3dc55"
+  integrity sha512-44feMc7DE1Ccpsas/1wioN8ewFJNquvi5FewA06wLnqct7CwMdGDVy41ieHaacogzDqLfG8nADIvMNp9e4bfbA==
+
 bottleneck@^2.19.5:
   version "2.19.5"
   resolved "https://registry.yarnpkg.com/bottleneck/-/bottleneck-2.19.5.tgz#5df0b90f59fd47656ebe63c78a98419205cadd91"
@@ -3015,6 +3121,10 @@ braces@^3.0.1, braces@~3.0.2:
   integrity sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==
   dependencies:
     fill-range "^7.0.1"
+
+"browser-serialport@git+https://github.com/noopkat/browser-serialport.git#c8628c41c11890d3058875994c15f83f2df8185b":
+  version "2.0.3"
+  resolved "git+https://github.com/noopkat/browser-serialport.git#c8628c41c11890d3058875994c15f83f2df8185b"
 
 browserslist@4.14.2:
   version "4.14.2"
@@ -3404,6 +3514,13 @@ charenc@~0.0.1:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
   integrity sha1-wKHS86cJLgN3S/qD8UwPxXkKhmc=
+
+chip.avr.avr109@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/chip.avr.avr109/-/chip.avr.avr109-1.1.1.tgz#68b04b125d61d18bd5c0451db894310b46acd609"
+  integrity sha512-+0+cvkHDsy/gizui/zFirTtDpvTQumJSs2SE9lT2BAzyE+CslXWQN9blfjMjhChcyNdZT8mFUQjETVne1gxBBQ==
+  dependencies:
+    intel-hex "*"
 
 "chokidar@>=3.0.0 <4.0.0", chokidar@^3.3.0, chokidar@^3.4.2, chokidar@^3.4.3, chokidar@^3.5.1:
   version "3.5.1"
@@ -7503,6 +7620,11 @@ inquirer@^7.0.0:
     strip-ansi "^6.0.0"
     through "^2.3.6"
 
+intel-hex@*, intel-hex@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/intel-hex/-/intel-hex-0.1.2.tgz#c257385207cac680faf0d21181ed0ed8fc6ebb92"
+  integrity sha512-BHdANJX9xz74E1IeaRklWDnUEgVuWKD6HQ6ESklElF+4O9/8UtLzuEYoFOiSWcYZV7I40Xwv6c/BKhJqu0w6lQ==
+
 internal-ip@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/internal-ip/-/internal-ip-4.3.0.tgz#845452baad9d2ca3b69c635a137acb9a0dad0907"
@@ -8110,6 +8232,11 @@ isurl@^1.0.0-alpha5:
   dependencies:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
+
+isval@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/isval/-/isval-0.0.2.tgz#1ceb0171c89113e3f5098a4f7336caaf33bef03f"
+  integrity sha1-HOsBcciRE+P1CYpPczbKrzO+8D8=
 
 iterall@^1.3.0:
   version "1.3.0"
@@ -9229,7 +9356,14 @@ moment@^2.27.0:
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
   integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
 
-monaco-editor@*, monaco-editor@^0.23.0:
+monaco-editor-webpack-plugin@^3.0.1:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/monaco-editor-webpack-plugin/-/monaco-editor-webpack-plugin-3.1.0.tgz#972efc47a91b3bf3bd977885684a3180eb8f341b"
+  integrity sha512-TP5NkCAV0OeFTry5k/d60KR7CkhTXL4kgJKtE3BzjgbDb5TGEPEhoKmHBrSa6r7Oc0sNbPLZhKD/TP2ig7A+/A==
+  dependencies:
+    loader-utils "^2.0.0"
+
+monaco-editor@^0.23.0:
   version "0.23.0"
   resolved "https://registry.yarnpkg.com/monaco-editor/-/monaco-editor-0.23.0.tgz#24844ba5640c7adb3a2a3ff3b520cf2d7170a6f0"
   integrity sha512-q+CP5zMR/aFiMTE9QlIavGyGicKnG2v/H8qVvybLzeFsARM8f6G9fL0sMST2tyVYCwDKkGamZUI6647A0jR/Lg==
@@ -9312,7 +9446,7 @@ name-all-modules-plugin@^1.0.1:
   resolved "https://registry.yarnpkg.com/name-all-modules-plugin/-/name-all-modules-plugin-1.0.1.tgz#0abfb6ad835718b9fb4def0674e06657a954375c"
   integrity sha1-Cr+2rYNXGLn7Te8GdOBmV6lUN1w=
 
-nan@^2.12.1:
+nan@^2.12.1, nan@^2.14.2:
   version "2.14.2"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
   integrity sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
@@ -10698,6 +10832,25 @@ potrace@^2.1.8:
   dependencies:
     jimp "^0.14.0"
 
+prebuild-install@^6.0.1:
+  version "6.1.3"
+  resolved "https://registry.yarnpkg.com/prebuild-install/-/prebuild-install-6.1.3.tgz#8ea1f9d7386a0b30f7ef20247e36f8b2b82825a2"
+  integrity sha512-iqqSR84tNYQUQHRXalSKdIaM8Ov1QxOVuBNWI7+BzZWv6Ih9k75wOnH1rGQ9WWTaaLkTpxWKIciOF0KyfM74+Q==
+  dependencies:
+    detect-libc "^1.0.3"
+    expand-template "^2.0.3"
+    github-from-package "0.0.0"
+    minimist "^1.2.3"
+    mkdirp-classic "^0.5.3"
+    napi-build-utils "^1.0.1"
+    node-abi "^2.21.0"
+    npmlog "^4.0.1"
+    pump "^3.0.0"
+    rc "^1.2.7"
+    simple-get "^3.0.3"
+    tar-fs "^2.0.0"
+    tunnel-agent "^0.6.0"
+
 prebuild-install@^6.1.1:
   version "6.1.2"
   resolved "https://registry.yarnpkg.com/prebuild-install/-/prebuild-install-6.1.2.tgz#6ce5fc5978feba5d3cbffedca0682b136a0b5bff"
@@ -11108,14 +11261,6 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
-
-react-monaco-editor@^0.43.0:
-  version "0.43.0"
-  resolved "https://registry.yarnpkg.com/react-monaco-editor/-/react-monaco-editor-0.43.0.tgz#495578470db7b27ab306af813b31f206a6bf9d1c"
-  integrity sha512-2PXSDwOzjUDlwdsK8psrmezSB2lPnjLQ/SRNwqoRF2+TAB2n4Q+Bs1wGlWOZbU8WI7s6Wnni0+3PdT9nSPtzRA==
-  dependencies:
-    monaco-editor "*"
-    prop-types "^15.7.2"
 
 react-refresh@^0.9.0:
   version "0.9.0"
@@ -11856,6 +12001,23 @@ serialize-javascript@^5.0.1:
   dependencies:
     randombytes "^2.1.0"
 
+serialport@^9.0.6:
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/serialport/-/serialport-9.2.0.tgz#17a8364979f3c06a54a7bf4e8cbb8ebc91e54511"
+  integrity sha512-C6AQ4jD4mre3tn3QA+atn++mEZDh4r40CIeh1sKhskKE+Q4eiIr/nzVMOiPxHb8gskrSNxujH+Br49tl3i9s9g==
+  dependencies:
+    "@serialport/binding-mock" "9.0.7"
+    "@serialport/bindings" "^9.2.0"
+    "@serialport/parser-byte-length" "9.0.7"
+    "@serialport/parser-cctalk" "9.0.7"
+    "@serialport/parser-delimiter" "9.0.7"
+    "@serialport/parser-inter-byte-timeout" "9.0.7"
+    "@serialport/parser-readline" "9.0.7"
+    "@serialport/parser-ready" "9.0.7"
+    "@serialport/parser-regex" "9.0.7"
+    "@serialport/stream" "9.0.7"
+    debug "^4.3.1"
+
 serve-index@^1.9.1:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/serve-index/-/serve-index-1.9.1.tgz#d3768d69b1e7d82e5ce050fff5b453bea12a9239"
@@ -12355,6 +12517,20 @@ static-extend@^0.1.1:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
+
+stk500-v2@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/stk500-v2/-/stk500-v2-1.0.4.tgz#f54e406da2221436575f193deea7f12f2c66af0c"
+  integrity sha512-5j7aYxA4S1YbwxQrEoefqtHoPCFCbv267aYdE7WDw4YAO9H4SpL4gg8YfuKoi+jGq+0wBP52D72FJNDTeVxB7Q==
+  dependencies:
+    async "^0.9.0"
+
+stk500@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/stk500/-/stk500-2.0.3.tgz#b063997705eb55b4a05388fe6945cd0cfd63092f"
+  integrity sha512-eu5jE9BdJ9j0Yl7mkSX00zf1kGFAxhkcPV8/IzLbvK8tkj3uAiPPTxmdVeRImUnkXdZ8GrFueel9mNqQi3mfHw==
+  dependencies:
+    async "^0.9.0"
 
 stream-each@^1.1.0:
   version "1.2.3"
