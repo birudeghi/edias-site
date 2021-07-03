@@ -1,6 +1,19 @@
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body {
+    margin: 0px;
+}
+
+.layout-wrapper {
+    margin: 0 auto;
+    max-width: 1440;
+    padding: 0px 80px;
+    padding-top: 0
 }
 
 .footer-section {
@@ -8,23 +21,25 @@ code {
     padding-bottom: 100px;
 }
 
-.hero-text {
+div.hero-text {
     align-self: flex-start;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 0px 0px 50px 0px;
     display: flex;
     align-items: center;
     flex-direction: column;
     flex-grow: 2;
 
     h1.hero-title {
-        margin-bottom: 0;
+        margin-top: 80px;
+        margin-bottom: 0px;
         text-align: center;
+        color: #ffffff;
     }
 
     h4.hero-subtitle {
         margin: 10px 0 0 0;
         text-align: center;
+        color: #ffffff;
     }
 }
 
@@ -37,9 +52,34 @@ img.hero-img {
     justify-content: center;
 }
 
+h2.how-title.display-4 {
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+
+h2.price-title.display-4 {
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+    color: #ffffff;
+}
+
+h4.price-content--text {
+    color: #ffffff;
+    text-align: center;
+}
+
+div.price-text {
+    max-width: 700px;
+}
+
+div.hero-container {
+    width: 700px;
+    text-align: center;
+}
+
 h1, h2, h3 {
     font-weight: 700;
-    color: #000000;
+    color: #111111;
 }
 
 h1 {
@@ -62,7 +102,7 @@ h4 {
 }
 
 p {
-    color: #000000;
+    color: #111111;
     margin: auto 0px;
 }
 

@@ -1,0 +1,21 @@
+
+div.section {
+    width: 100%;
+    padding: 100px 0px 100px 0px;
+}
+
+div.section--dark {
+    background-color: #111111;
+}
+
+div.section--light {
+    background-color: #ffffff;
+}
+
+.section-row {
+	margin: 0 auto;
+    float: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}

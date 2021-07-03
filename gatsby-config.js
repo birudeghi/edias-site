@@ -7,11 +7,7 @@ module.exports = {
     menuLinks:[
       {
         name: 'Contact',
-        link: "mailto:owen@edias.space"
-      },
-      {
-        name: 'Dev',
-        link: "/dev/",
+        link: "mailto:founders@edias.space"
       }
     ]
   },

@@ -38,17 +38,7 @@ const Layout = ({ children }) => (
           >
           </Helmet>
           <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
-          <div
-            className="layout-wrapper"
-            style={{
-              margin: '0 auto',
-              maxWidth: 1440,
-              padding: '0px 80px',
-              paddingTop: 0,
-            }}
-          >
-            {children}
-          </div>
+              {children}
           <div className="footer-section">
             <div className="social-media">
                 <a href="https://www.facebook.com/heycuvo" target="_blank" rel="noopener noreferrer">
