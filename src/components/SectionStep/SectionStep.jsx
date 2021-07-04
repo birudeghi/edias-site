@@ -15,7 +15,7 @@ const SectionStep = props => {
                             {content.icon}
                         </div>
                         <div className="row step-row step-text">
-                            <h4 className="h4">{content.text}</h4>    
+                            <h5 className="h5">{content.text}</h5>    
                         </div>
                     </div>
                 )
