@@ -1,4 +1,9 @@
 @import 'bootstrap-icons/font/bootstrap-icons.css';
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import '@fortawesome/fontawesome-free/scss/brands.scss';
+
+$fa-font-path: "../webfonts";
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -57,6 +62,29 @@ h2.how-title.display-4 {
     margin: 0px 0px 40px 0px;
 }
 
+h4.technical-content--text {
+    margin-top: 0px;
+}
+
+div.technical-content--details {
+    margin-top: 50px;
+}
+
+.python {
+    @extend %fa-icon;
+    @extend .fab;
+
+    &:before {
+        content: fa-content($fa-var-python);
+    }
+}
+
+div.technical-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 h2.price-title.display-4 {
     text-align: center;
     margin: 0px 0px 40px 0px;
@@ -99,6 +127,12 @@ h4 {
     font-weight: 400;
     line-height: 22pt;
     font-size: 16pt;
+}
+
+h5 {
+    font-weight: 400;
+    line-height: 18pt;
+    font-size: 13pt;
 }
 
 p {
